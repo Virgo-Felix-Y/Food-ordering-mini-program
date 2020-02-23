@@ -1,0 +1,40 @@
+<!--pages/gouwuche/jiesuan.wxml-->
+<form bindsubmit='xiadan'>
+  <scroll-view scroll-y style='height: {{winHeight -40}}px' class='gwc'>
+    <!--购物车产品列表-->
+    <block wx:for="{{gwc}}" wx:key="*this">
+      <view class='sp'>
+        <view class='sp-tupian'>
+          <image class='sp-img' src='{{item.cp_tupian}}' mode="widthFix"></image>
+        </view>
+        <view class='sp-info'>
+          <view class="sp-mc">{{item.cp_mingcheng}}</view>
+          <view class="sp-jiage">￥{{item.jiage}}</view>
+        </view>
+        <view class="sp-shuliang">
+          <view class="sp-shu">{{item.cp_shuliang}}份</view>
+        </view>
+      </view>
+    </block>
+    <view class='jiesuan-liuyan'>
+      备注
+      <input type='text' class='jiesuan-liuya-neirong' name="liuyan" />
+    </view>
+
+  </scroll-view>
+
+
+
+  <view class='dibu'>
+    <view class='feiyong' style='width:60%;'>
+      <view class='feiyong-tupian'>
+        <image class='feiyong-img' src='/images/sp02.png'></image>
+      </view>
+      <view class='feiyong-shu'>￥{{zongfeiyong}}</view>
+    </view>
+
+    <button class='caozuo' style='width:40%' form-type='submit' id='xiadan' data-caozuo='xiadan'>立即点餐</button>
+  </view>
+
+
+</form>

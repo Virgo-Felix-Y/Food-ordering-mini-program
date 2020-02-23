@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/xuesheng/fenlei",
+    "pages/jiaogong/fenlei",
+    "pages/xiangxi/xiangxi",
+
+    "pages/gouwuche/index",
+    "pages/gouwuche/jiesuan",
+    
+    "pages/mine/index",
+    "pages/mine/index2",
+    "pages/mine/dingdan/dingdan"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d7d7d7",
+    "navigationBarTitleText": "开饭啦！",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#666666",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/shouye-off.png",
+        "selectedIconPath": "images/shouye-on.png"
+      },
+      {
+        "pagePath": "pages/gouwuche/index",
+        "text": "购物车",
+        "iconPath": "images/gouwuche-off.png",
+        "selectedIconPath": "images/gouwuche-on.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "个人中心",
+        "iconPath": "images/mine-off.png",
+        "selectedIconPath": "images/mine-on.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

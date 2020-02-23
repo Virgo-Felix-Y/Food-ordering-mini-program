@@ -1,0 +1,9 @@
+<!--pages/mine/index.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view>
+     <button open-type='getUserInfo' bindgetuserinfo='getWxInfo' class='wx' type="primary" lang="zh_CN" >微信登陆</button>
+  </view>
+</form>
+
+<!--view>登陆状态：{{str_u_login}}</view>
+<view>用户id：{{str_u_id}}  | 用户名：{{str_u_name}}</view-->

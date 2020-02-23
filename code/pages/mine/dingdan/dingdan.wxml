@@ -1,0 +1,38 @@
+<!--pages/mine/dingdan/dingdan.wxml-->
+<!--顶部切换菜单-->
+<scroll-view scroll-y style='height:{{winHeight-40}}px' class='cps'>
+  <block wx:for="{{ddcps}}">
+    <view class='cp-danhao'>
+      单号：{{item.danhao}} | 时间：{{item.shijian}}
+    </view>
+    <block wx:for="{{item.cps}}" wx:for-item="item2">
+      <view class='cp'>
+        <view class='cp-tupian'>
+          <image class='cp-img' src='{{item2.tupian}}' mode='widthFix'></image>
+        </view>
+        <view class='cp-xinxi'>
+          <view class="cp-mingcheng">{{item2.mingcheng}}</view>
+          <view class="cp-jiage">￥：{{item2.jiage}}</view>
+        </view>
+        <view class='cp-shuliang'>
+          {{item2.shuliang}} 件
+        </view>
+      </view>
+    </block>
+
+    <view class='cp-jiesuan'>
+      共{{item.chanpinshu}}样菜品， 产品金额：¥{{item.feiyong}}
+    </view>
+
+  </block>
+
+</scroll-view>
+
+<!--底部返回首页-->
+<view class='dibu'>
+  <view class='navs'>
+    <navigator url='/pages/index/index' open-type='switchTab' class='nav-item' style='width:100%'>
+      <text class='bt'>回到首页</text>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+/* pages/mine/index2.wxss */
+.toubu {
+  display: flex;
+  margin: 1px;
+  padding: 10px;
+  background-color: gray;
+}
+.toubu-zuo {}
+.toubu-zuo-touxiang {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 3px 3px 10px gainsboro;
+  display: block;
+  overflow: hidden;
+}
+.toubu-you {
+  padding-left: 10px;
+  align-self: center;
+}
+.toubu-you-txt1 {
+  color: white;
+  align-self: center;
+}
+
+.caidan{
+  display: flex;
+  padding: 10px; 
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+  margin-top: 10px;
+}
+.caidan-icon{
+  width: 20px; height: 20px;
+}
+.caidan-text{
+  flex-grow: 1;
+  margin-left: 10px;
+}
+.caidan-arrow{
+  width: 16px; height: 16px;
+}

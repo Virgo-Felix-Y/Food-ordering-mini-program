@@ -1,0 +1,32 @@
+<!--pages/dingdan/index.wxml-->
+<scroll-view scroll-y style='height: {{winHeight -40}}px' class='gwc'>
+  <block wx:for="{{gwc}}" wx:key="*this">
+    <view class='sp'>
+      <view class='sp-tupian'>
+        <image class='sp-img' src='{{item.cp_tupian}}' mode="widthFix"></image>
+      </view>
+      <view class='sp-info'>
+        <view class="sp-mc">{{item.cp_mingcheng}}</view>
+        <view class="sp-jiage">￥{{item.jiage}}</view>
+      </view>
+      <view class="sp-shuliang">
+        <view class="sp-jian" bindtap='myjian' data-jian='{{item.cp_shuliang - 1}}' data-gwcid='{{item.gwc_id}}'>-</view>
+        <view class="sp-shu">{{item.cp_shuliang}}</view>
+        <view class="sp-jia" bindtap='myjia' data-jia='{{item.cp_shuliang*1 + 1}}' data-gwcid='{{item.gwc_id}}'>+</view>
+      </view>
+    </view>
+  </block>
+
+</scroll-view>
+
+<view class='dibu'>
+  <view class='feiyong' style='width:70%;'>
+    <view class='feiyong-tupian'>
+      <image class='feiyong-img' src='/images/sp02.png'></image>
+    </view>
+    <view class='feiyong-shu'>￥{{zongfeiyong}}</view>
+  </view>
+  <view class='caozuo' bindtap='jiesuan' style='width:30%'>
+    去结算
+  </view>
+</view>

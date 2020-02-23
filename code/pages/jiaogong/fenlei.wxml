@@ -1,0 +1,28 @@
+<!--pages/jiaogong/fenlei.wxml-->
+<view class="fenlei">
+
+  <view class="left" style="height:{{winHeight}}px">
+    <block wx:for="{{navList}}" wx:key="*this">
+      <text class="type-nav {{curNav == item.id ? 'selected' : ''}}" bindtap="selectNav" data-index="{{index}}" data-id="{{item.id}}">{{item.name}}</text>
+    </block>
+
+  </view>
+<view class="right">
+<block wx:for="{{foods}}"  wx:key="*this">
+    <navigator url='/pages/xiangxi/xiangxi?cpid={{item.cp_id}}' class='food'>
+      <view class='f_img'>
+        <image src='{{item.cp_tupian}}' class="food_img" mode="widthFix"></image>
+      </view>
+      <view class='food_text'>
+        <text class='food_name'>{{item.cp_mingcheng}}</text>
+        <view>
+          <text class='price'>¥ {{item.jiage}}</text>
+        </view>
+      </view>
+    </navigator>
+</block>
+</view>
+
+
+
+</view>

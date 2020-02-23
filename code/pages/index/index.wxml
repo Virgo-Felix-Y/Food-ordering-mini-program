@@ -1,0 +1,28 @@
+<!--pages/index/index.wxml-->
+
+<!-- 首页轮播图片-->
+<swiper indicator-dots="{{true}}" vertical="{{false}}" autoplay="{{true}}" interval="2000" duration="500" style="height:75px">
+  <swiper-item>
+    <image mode="widthFix" src="/pictures/lunbo1.jpg" class="lunbo01"></image>
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" src="/pictures/lunbo2.jpg" class="lunbo01"></image>
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" src="/pictures/lunbo3.jpg" class="lunbo01"></image>
+  </swiper-item>
+</swiper>
+
+<!--首页菜单-->
+<view>
+  <navigator url="/pages/xuesheng/fenlei" class="menu-item">
+    <image mode="widthFix" src="/pictures/xuesheng.jpg" class="menu-img"></image>
+    <text class="menu-ziti">学生食堂</text>
+
+  </navigator>
+  <navigator url="/pages/jiaogong/fenlei" class="menu-item">
+    <image mode="widthFix" src="/pictures/jiaogong.jpg" class="menu-img"></image>
+    <text class="menu-ziti">教工食堂</text>
+  </navigator>
+</view>
+

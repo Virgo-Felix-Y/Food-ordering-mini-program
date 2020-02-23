@@ -1,0 +1,99 @@
+/* pages/mine/dingdan/dingdan.wxss */
+/*标题样式*/
+
+
+/*订单产品样式*/
+.cps{
+  display: flex;
+  flex-direction:column;
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.cp-danhao{
+  background-color: #f2f2f2;
+  font-size: 12px;
+  color: gray;
+  height: 30px;
+  line-height: 30px;
+}
+
+.cp{
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px solid gainsboro;
+}
+.cp-tupian{
+  width: 20%;
+}
+.cp-img{
+  width: 100%;
+  border-radius: 10%;
+}
+.cp-xinxi{
+  width: 65%;
+  margin-left: 7px;
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  margin: 10px 0 0 15px;
+
+}
+.cp-mingcheng{
+  font-size: 16px;
+  font-weight: bold;
+  width: 95%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cp-jiage{
+  font-size: 13px;
+  color: red;
+  margin-top: 7px;
+}
+.cp-shuliang{
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.cp-jiesuan{
+  font-size: 12px;
+  color:gray;
+}
+
+/*底部返回首页*/
+.dibu {
+  position: fixed;
+  bottom: 0px;
+  height: 44px;
+  width: 100%;
+  line-height: 44px;
+  color: gray;
+  border-top: 1px solid #ddd;
+  background-color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.navs {
+  display: flex;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+
+.bt {
+  width: 100%;
+  background-color: darkorange;
+  color: white;
+  font-size: 16px;
+  border-radius: 0;
+  height: 44px;
+  line-height: 44px;
+}
